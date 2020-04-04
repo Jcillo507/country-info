@@ -1,0 +1,18 @@
+.infoline-ctr {
+  margin: 7px 7px 7px 0;
+}
+
+.line-title {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.line-data {
+  font-size: 16px;
+}
+
+@media (max-width: 400px) {
+  .infoline-ctr {
+    margin: 4px 0px;
+  }
+}
