@@ -1,15 +1,15 @@
-
-.header-wrapper{
+.header-wrapper {
   display: flex;
   padding: 25px 100px;
   justify-content: space-between;
   align-items: center;
-  box-shadow:2px 2px rgb(180, 180, 180);
+  box-shadow: 2px 2px rgb(180, 180, 180);
 }
 
-.switch-ctr{
+.switch-ctr {
   font-size: 25px;
 }
+
 /*mode change*/
 .switch {
   position: relative;
@@ -49,7 +49,7 @@
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
-   border-radius: 50%;
+  border-radius: 50%;
 }
 
 input:checked+.slider {
@@ -66,7 +66,7 @@ input:checked+.slider:before {
   transform: translateX(26px);
 }
 
-@media (min-width: 200px) and(max-width: 400px) {
+@media (max-device-width: 400px) {
   .header-title {
     font-size: 15px;
     padding-left: 20px;
@@ -81,15 +81,15 @@ input:checked+.slider:before {
   }
 
   .switch {
-    height: 17px ;
-    width: 43px 
+    height: 17px;
+    width: 43px
   }
 
   .slider:before {
-    height: 13px ;
-    width: 13px ;
-    left: 2px ;
-    bottom: 2px ;
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
   }
 
 }

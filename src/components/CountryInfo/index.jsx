@@ -90,7 +90,7 @@ class CountryInfo extends React.Component {
           </div>
           <div className="border-ctr">
             <strong className="border-title">Border Countries:</strong>
-            <span className='bttn-ctr'>
+            <span className="bttn-ctr">
               {borderList.length > 0 ? borderList : "   No Border Countries"}
             </span>
           </div>
@@ -100,7 +100,7 @@ class CountryInfo extends React.Component {
     return (
       <div className="country-info-ctr">
         <Link to={{ pathname: "/" }}>
-          <button className='home-bttn'>Home</button>
+          <button className="home-bttn">Home</button>
         </Link>
         {showInfo}
       </div>

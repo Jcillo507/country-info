@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 
-
-import './listOfCountries.scss'
+import "./listOfCountries.scss";
 
 import CountryCard from "../CountryCard";
 import { allCountryData } from "../../services/ApiCall";
@@ -47,16 +46,17 @@ class ListOfCountries extends React.Component {
       this.setState({ region: e.value });
     };
     const countryIteration = data => (
-      <div className='country-list' key={data.name}>
-      <Link
-        key={data.name}
-        to={{
-          pathname: `/${data.name}`,
-          info: { data: data }
-        }}
-      >
-        <CountryCard data={data} />
-      </Link></div>
+      <div className="country-list" key={data.name}>
+        <Link
+          key={data.name}
+          to={{
+            pathname: `/${data.name}`,
+            info: { data: data }
+          }}
+        >
+          <CountryCard data={data} />
+        </Link>
+      </div>
     );
     const countriesDisplay =
       region === undefined || region === "World"
@@ -71,7 +71,7 @@ class ListOfCountries extends React.Component {
             .filter(e => e.name.toLowerCase().includes(search.toLowerCase()))
             .filter(e => e.region.includes(region))
             .map(countryIteration);
-      
+
     return (
       <div>
         <span className="search-ctr">
@@ -90,10 +90,7 @@ class ListOfCountries extends React.Component {
             placeholder="Filter By Region"
           />
         </span>
-        <h1 className="title">
-          {region}
-          
-        </h1>
+        <h1 className="title">{region}</h1>
         <div className="list-ctr">{countriesDisplay}</div>
       </div>
     );

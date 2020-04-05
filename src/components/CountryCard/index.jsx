@@ -17,7 +17,7 @@ const CountryCard = props => {
       <p className="country-card-info">
         <strong>Capital:</strong> {props.data.capital}
       </p>
-      <p className='country-card-info'>
+      <p className="country-card-info">
         <strong>Region:</strong> {props.data.region}
       </p>
     </div>

@@ -8,7 +8,11 @@ const Main = () => {
   return (
     <div>
       <Switch>
-        <Route exact path={`/:name`} render={props => <CountryInfo {...props} />} />
+        <Route
+          exact
+          path={`/:name`}
+          render={props => <CountryInfo {...props} />}
+        />
         <ListOfCountries />
         <CountryInfo />
       </Switch>
