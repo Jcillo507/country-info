@@ -73,7 +73,7 @@ class CountryInfo extends React.Component {
           <div className="data-wrapper">
             <div className="data-ctr">
               <InfoLine title="Native Name: " value={data.nativeName} />
-              <InfoLine title="Population: " value={data.population} />
+              <InfoLine title="Population: " value={data.population.toLocaleString()} />
               <InfoLine title="Region: " value={data.region} />
               <InfoLine title="Subregion: " value={data.subregion} />
               <InfoLine title="Capital: " value={data.capital} />

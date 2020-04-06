@@ -12,7 +12,7 @@ const CountryCard = props => {
       />
       <p className="country-card-name">{props.data.name}</p>
       <p className="country-card-info">
-        <strong>Population:</strong> {props.data.population}
+        <strong>Population:</strong> {props.data.population.toLocaleString()}
       </p>
       <p className="country-card-info">
         <strong>Capital:</strong> {props.data.capital}
