@@ -1,8 +1,6 @@
 import React from 'react';
-import './App.scss';
+import './css/main.css';
 import Main from './components/Main/'
-
-import "./components/Header/header.scss";
 
 class App extends React.Component {
   constructor() {

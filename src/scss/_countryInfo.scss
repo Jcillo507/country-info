@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: column;
   margin-left: 40px;
-
 }
 
 .country-info-flag {
@@ -32,14 +31,12 @@
 .data-wrapper {
   display: flex;
   align-items: space-around;
-
 }
 
 .data-ctr {
   display: flex;
   flex-direction: column;
   flex: 1;
-
 }
 
 .border-button {
@@ -64,11 +61,9 @@
   width: 90px;
   margin: 30px 30px 0 30px;
   font-size: 20px;
-
 }
 
 @media screen and (max-device-width: 1125px) {
-
   .country-info-flag {
     height: 240px !important;
     width: 320px !important;

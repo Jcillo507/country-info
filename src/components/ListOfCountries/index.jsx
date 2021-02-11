@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 
-import "./listOfCountries.scss";
-
 import CountryCard from "../CountryCard";
 import { allCountryData } from "../../services/ApiCall";
 
@@ -74,7 +72,7 @@ class ListOfCountries extends React.Component {
 
     return (
       <div>
-        <span className="search-ctr">
+        <div className="search-ctr">
           <form>
             <input
               className="search-input"
@@ -89,7 +87,7 @@ class ListOfCountries extends React.Component {
             onChange={onDDClick}
             placeholder="Filter By Region"
           />
-        </span>
+        </div>
         <h1 className="title">{region}</h1>
         <div className="list-ctr">{countriesDisplay}</div>
       </div>
