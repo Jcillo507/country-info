@@ -1,6 +1,6 @@
 import React from "react";
 
-const CountryCard = props => {
+const CountryCard = (props) => {
   return (
     <div className="country-ctr">
       <img

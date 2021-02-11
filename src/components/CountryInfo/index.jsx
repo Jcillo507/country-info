@@ -12,14 +12,14 @@ class CountryInfo extends React.Component {
       data: [],
       languages: [],
       borders: [],
-      list: []
+      list: [],
     };
   }
   componentDidMount = async () => {
     await this.getData();
     this.getCodes();
   };
-  componentDidUpdate = async prevProps => {
+  componentDidUpdate = async (prevProps) => {
     if (prevProps.location.pathname !== this.props.location.pathname) {
       await this.getData();
     }
@@ -30,7 +30,7 @@ class CountryInfo extends React.Component {
     this.setState({
       data: data,
       borders: data[0].borders,
-      languages: data[0].languages
+      languages: data[0].languages,
     });
   };
 
@@ -46,8 +46,8 @@ class CountryInfo extends React.Component {
     const { borders } = this.state;
     const { list } = this.state;
     const borderList = list
-      .filter(e => borders.includes(e.code))
-      .map(el => (
+      .filter((e) => borders.includes(e.code))
+      .map((el) => (
         <span key={el.country}>
           <button className="border-button">
             <Link className="border" to={{ pathname: `/${el.country}` }}>
@@ -63,7 +63,7 @@ class CountryInfo extends React.Component {
         {i !== arr.length - 1 ? ", " : ""}
       </span>
     ));
-    const showInfo = data.map(data => (
+    const showInfo = data.map((data) => (
       <div key={data.name} className="info-wrapper">
         <img className="country-info-flag" src={data.flag} alt={data.name} />
         <div className="info-ctr">
@@ -71,7 +71,10 @@ class CountryInfo extends React.Component {
           <div className="data-wrapper">
             <div className="data-ctr">
               <InfoLine title="Native Name: " value={data.nativeName} />
-              <InfoLine title="Population: " value={data.population.toLocaleString()} />
+              <InfoLine
+                title="Population: "
+                value={data.population.toLocaleString()}
+              />
               <InfoLine title="Region: " value={data.region} />
               <InfoLine title="Subregion: " value={data.subregion} />
               <InfoLine title="Capital: " value={data.capital} />
