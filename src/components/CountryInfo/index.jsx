@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./countryInfo.scss";
-
 import InfoLine from "../InfoLine/";
 
 import { specificCountry } from "../../services/ApiCall";

@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./country.scss";
-
 const CountryCard = props => {
   return (
     <div className="country-ctr">

@@ -1,5 +1,4 @@
 import React from "react";
-import "./infoLine.scss";
 
 const InfoLine = props => {
   return (
